@@ -1,0 +1,86 @@
+id,title,selftext,score,num_comments,author,created_utc,url,upvote_ratio,over_18,edited,spoiler,stickied
+1ghtd7j,"In a fact table, how does one create the foreign key that connects to a dimension table modelled as SCD type 2?","I’m teaching myself about slowly-changing dimensions and had a thought which I didn’t know how to resolve. I hope I’m able to clearly express my idea here. I’m familiar with MySQL and PySpark syntax, and to a lesser extent Snowflake SQL, in case that’s of assistance.
+
+In an SCD2 table, you would have multiple rows to represent changes in state for a given dimension value. There would be a `start_date` and `end_date` column indicating the validity of said state, and then that row would have a surrogate key that becomes the join key with the relevant fact table. This is what I’ve understood so far.
+
+Now, going back to the fact table, the foreign key (surrogate key) value of a dimension would change depending on the transaction date. How does one write the logic in the fact table to enable this change in foreign key values?
+
+Thanks.",11,14,haskathon,2024-11-02 10:20:08,https://www.reddit.com/r/dataengineering/comments/1ghtd7j/in_a_fact_table_how_does_one_create_the_foreign/,0.87,False,False,False,False
+1gi26mq,"Cheapest Hosting Options for RAG Setup with Crawler, Vector DB, and GPT-4 Access?","Hey r/dataengineering!
+
+I'm building a niche RAG solution using a crawler backend for proprietary data, a vector database with indexes, and a frontend offering access to models like GPT-4 or Claude etc. Azure's seems too pricey for my budget, so I'm looking for cheaper alternatives that still offer decent performance. Probably leaning more into the open source stack.
+
+Requirements:
+
+- Crawler backend (scalable, low-cost) for ingestion
+- Vector DB with good search performance
+- Frontend hosting (affordable)
+- Access to AI models (GPT-4 and others)
+
+
+Any suggestions on affordable cloud providers or setups? Thanks! For the vector db I thought about postgres with vector plugin. Any sugestion on how to create smooth indexes are appreciated.",11,2,Ok-Sentence-8542,2024-11-02 17:53:48,https://www.reddit.com/r/dataengineering/comments/1gi26mq/cheapest_hosting_options_for_rag_setup_with/,0.84,False,False,False,False
+1ghtqlr,Data companies/industry Europe,"Hi!
+
+I'm a junior data engineer in Europe. I would like to work at a company that does data solutions for other companies, but I hind it very difficult to search for companies like this on google. I tried searching for: data solutions, data services, business intelligence services, but judging by the results I feel like I'm missing the gist of this industry. Could you help me gain insight into the data industry(if this is its name), or recommend companies to work for? I'm interested in elevating companies by using smart data solutions to gather, move and visualise data.
+
+Thanks!!!",7,8,imbuszkulcs,2024-11-02 10:47:00,https://www.reddit.com/r/dataengineering/comments/1ghtqlr/data_companiesindustry_europe/,0.74,False,False,False,False
+1ghwppu,Multiple processes writing to SQLite3 .. what's the actual answer?,"Been reading a lot about concurrency (or not) on SQLite. But I'm still not clear. Can you help?
+
+I have multiple Python scripts running at various times collecting cool and interesting data from around the web. They each feed into a sqlite3 **central.db**
+
+Whilst their cron schedules are spaced apart, as I introduce more and more scripts I will eventually get some overlap with some of them trying to write to **central.db** at the same time.
+
+What happens when that happens? 
+
+... No singularity memes please.",7,5,_DESTRUCTION,2024-11-02 13:42:22,https://www.reddit.com/r/dataengineering/comments/1ghwppu/multiple_processes_writing_to_sqlite3_whats_the/,0.82,False,False,False,False
+1ghwmoi,Thoughts on architecture for a custom web app ,"I need to hear some thoughts on a solution. I’m using a lakehouse architecture in Azure Databricks with the data catalog. I have a custom built web app that needs to use various data elements from this environment. There is transformed data and data science outputs positioned in it. The custom web app will consume this information. The custom web app will also have the ability for users to create new data. 
+
+I’m planning on creating a relational database the web app uses for transactional purposes. I also plan to sync data from the Databricks environment into this database. This means the web app will only ever need to talk to the relational database. I recognize it introduces complexity with syncing but it allows for simplified queries and performance optimizations without having to query the databricks environment and wait for the sleeveless compute to spin up. 
+
+Am I on the right track? ",6,3,DizzyTheme6767,2024-11-02 13:38:07,https://www.reddit.com/r/dataengineering/comments/1ghwmoi/thoughts_on_architecture_for_a_custom_web_app/,0.88,False,False,False,False
+1ghzeob,Resources/Books for Data Modeling in ML?,"I'm an Analytics/Data Engineer who uses Kimball/Inmon for Data Modeling. Am about to start a new role as an Analytics Engineer, specifically working with Data Scientists to help model input data for their ML models. I'm not sure what to expect here as Kimball/Inmon doesn't seem to be that applicable to ML? Anyone have any recos for resources/books to know more about this topic? For context, I have never worked with ML/AI so this uncharted territory for me.",7,3,leonseled,2024-11-02 15:48:18,https://www.reddit.com/r/dataengineering/comments/1ghzeob/resourcesbooks_for_data_modeling_in_ml/,0.9,False,False,False,False
+1ghvtcm, Calling all ML developers! ,"I am working on a research project which will contribute to my PhD dissertation. 
+
+This is a user study where ML developers answer a survey to understand the issues, challenges, and needs of ML developers to build privacy-preserving models.
+
+ **If you work on ML products or services or you are part of a team that works on ML**, please help me by answering the following questionnaire:  [https://pitt.co1.qualtrics.com/jfe/form/SV\_6myrE7Xf8W35Dv0](https://pitt.co1.qualtrics.com/jfe/form/SV_6myrE7Xf8W35Dv0).
+
+**For sharing the study:**
+
+**LinkedIn**: [https://www.linkedin.com/feed/update/urn:li:activity:7245786458442133505?utm\_source=share&utm\_medium=member\_desktop](https://www.linkedin.com/feed/update/urn:li:activity:7245786458442133505?utm_source=share&utm_medium=member_desktop)
+
+Please feel free to share the survey with other developers.
+
+Thank you for your time and support!
+
+ 
+
+Mary",3,4,MaryAD_24,2024-11-02 12:56:38,https://www.reddit.com/r/dataengineering/comments/1ghvtcm/calling_all_ml_developers/,0.58,False,False,False,False
+1gi9719,SAP ERP Source system vs In-App Reporting,I am trying to come up with a framework when to use SAP source system for reporting vs in-app reporting. I am unsure what in-app reporting is in SAP since I am relatively new to using SAP. Any thoughts? My understanding is SAP Fiori would be the source system reporting functionality. ,3,0,king_ao,2024-11-02 23:15:55,https://www.reddit.com/r/dataengineering/comments/1gi9719/sap_erp_source_system_vs_inapp_reporting/,1.0,False,False,False,False
+1gi57ex,Store everything inside a key value table ,"Hello! Junior data engineer here, working in an unexperienced team (senior and architect left). We are collecting data from multiple data sources and storing them in minio. Then we store information in Iceberg table format, as raw data.
+From this raw data, we are collecting only some columns and storing them inside a common table (which has multiple columns, like key and value columns, load date etc.). The analytics are using this table, but when multiples keys are used, the whole querying becomes slow (we are using trino). The initial idea was to use the data vault pattern, but because our lack of experience, I don't know if it is the right solution, or if it is implemented correctly. 
+
+From your experience, is the data vault suitable for this type of scenario (not really sure how to use satellites in this case) ? The plan is to support multiple keys in the future. Or should we shift towards star schema? ",3,1,Alive_Double1584,2024-11-02 20:09:42,https://www.reddit.com/r/dataengineering/comments/1gi57ex/store_everything_inside_a_key_value_table/,0.81,False,False,False,False
+1gi9up0,CV and career advice,"I need advice for my CV and career. I joined a solution provider company that delivers data analysis solutions in the cloud (GCP) and on premise. 1 year working here, but current projects are mostly focused on ML and AI projects like building Generative AI which I haven't learned yet and I'm also very bad at ML. I was worried that I would be stuck and not be able to improve my skills, so I considered joining as a volunteer but I saw that there were no openings and opportunities to contribute to the data space.
+
+When I'm not working, I still study, but because I'm not strong enough or sure what tools I want to learn, what I learn can be said to be too broad, in fact I feel that sometimes I delve deeper into things that may not be necessary, which makes me explore for too long (like finding out what and how to batch.size and linger.ms work on Apache Kafka 😀).
+
+I'm actually not too interested in making income a motivation to look for a side hustle or part time, but I really want to try to improve my skills and validate what I've learned so that it's useful in the world of work.
+
+The next simple question is, is this year's experience enough or not enough? Because I plan to leave this company in about 2-3 years and don't want to be at a junior level (maybe).
+
+I'm open with any advice, feedback, anything. Thank you ^^",2,5,xedonedron,2024-11-02 23:46:39,https://i.redd.it/wbgxz785skyd1.jpeg,0.63,False,False,False,False
+1gi4zfw,Modelling advice,"Looking to bounce this off some of you for help. We’re in the process of building up a gold layer star schema for analytics. I’ve been back and forth on the fact tables.
+
+We have 4 tables in our oltp database - purchase table, order items table, a payment items table, and a bill table. Each contains fields that will be modeled as facts and dims. 
+
+Purchases are the high level purchase, while order items are the individual items of the purchase. Purchases has total cost, discounts, tax, and who bought and from where. The items has an item total and quantity, the purchase id they belong to, and a few other facts unique to the item level. 
+
+Would you treat these as 2 fact tables? We may have to do reporting on 1 or the other but sometimes both. Having everything in 1 fact means the purchase related info is duplicated across rows for each item of that purchase. What would be best practice here?
+
+The payment items and bill have similar relationships but also get linked to a purchase and to the order items. 4 fact tables with surrogate keys referenced in each? Issue here would be dependency in processing. 1 fact table, something else? ",2,4,justanator101,2024-11-02 19:59:51,https://www.reddit.com/r/dataengineering/comments/1gi4zfw/modelling_advice/,0.76,False,False,False,False
+1gi66ss,Do I need Azure Functions with Dagster Cloud for running Python scripts?,"I’m exploring serverless options for deploying custom Python EL code with my small DE team using Dagster Cloud. 
+
+Can Dagster Cloud handle the execution of these scripts directly or do I still need a serverless compute service like Azure Functions? From what I’ve read, it seems Dagster Cloud might be all we need. 
+
+I appreciate any insights on this!",1,2,muneriver,2024-11-02 20:55:02,https://www.reddit.com/r/dataengineering/comments/1gi66ss/do_i_need_azure_functions_with_dagster_cloud_for/,0.67,False,False,False,False
