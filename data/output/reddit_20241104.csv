@@ -1,0 +1,83 @@
+id,title,selftext,score,num_comments,author,created_utc,url,upvote_ratio,over_18,edited,spoiler,stickied
+1gih13v,Why Popular Programming Books Might Be Ruining Your Skills,"I recently came across an [article](https://medium.com/@pepitoscrespo/why-most-popular-programming-books-are-ruining-your-skills-a44c7fed880d) by Jose Crespo. The author argues that many well-known programming books—like Clean Code, The Pragmatic Programmer, and Design Patterns —may actually hinder your development rather than help it. Here are the main points he discusses:
+
+**Over-Engineering for Hypothetical Scenarios:**
+
+* These books often advise designing code for future changes, leading to over-engineered and abstract code that's hard to read and maintain.
+* Instead, it's better to focus on solving current problems with simple, modular code and avoid unnecessary complexity.
+
+**Impracticality of Top-Down Code Reading:**
+
+*  The idea of writing code that's readable from top to bottom doesn't align with real-world debugging, where developers jump into specific areas and trace code from the bottom up.
+* Code should be designed to make tracing and debugging more straightforward, not like reading a novel.
+
+**Misuse of Object-Oriented Programming (OOP):**
+
+* An overemphasis on OOP principles can result in a tangled web of subclasses and inheritance hierarchies.
+* This complexity makes the codebase difficult to debug and maintain, often requiring runtime analysis to understand.
+
+**Overdependence on a Single Language:**
+
+* Focusing too much on mastering one programming language can make developers less adaptable in a fast-evolving tech landscape.
+* With AI tools that can handle syntax, understanding fundamental concepts like algorithms and system architecture is more valuable.
+
+**Premature Optimization Pitfalls:**
+
+* Early optimization efforts can complicate code without significant performance gains.
+* Writing clear, maintainable code should be the priority; optimize later when necessary.
+
+**Challenges with Dynamic Runtime Analysis:**
+
+* Over-engineered code often requires time-consuming dynamic runtime analysis to debug due to complex execution paths.
+* Simplifying code structure can save valuable time and reduce frustration during debugging.
+
+**The SOLID Principles Trap**
+
+* Strict adherence to principles like SOLID can isolate critical error information, making debugging more difficult.
+* It's important to balance these principles with practical considerations to maintain code that is both robust and understandable.
+
+**Which of the points do you agree with and which do you disagree with?**",109,38,Xavio_M,2024-11-03 06:44:41,https://www.reddit.com/r/dataengineering/comments/1gih13v/why_popular_programming_books_might_be_ruining/,0.85,False,False,False,False
+1gim2i5,I created a free data engineering email course.,,67,7,ivanovyordan,2024-11-03 12:47:37,https://datagibberish.com/p/free-data-engineering-course,0.86,False,False,False,False
+1gipkqh,"Bronze -> Silver vs. Silver-> Gold, which is more sh*t?","Hi everyone!
+
+I was curious to know, which transition do you find more time-consuming and effort-intensive? On one hand, the bronze layer requires handling multiple sources, which can become complex and messy when dealing with a high volume. On the other hand, the silver-to-gold transition often demands adjustments based on evolving business needs from stakeholders, which can add its own challenges.
+
+I'd love to hear your thoughts on which stage you find more demanding and why!",31,39,gangana3,2024-11-03 15:36:07,https://www.reddit.com/r/dataengineering/comments/1gipkqh/bronze_silver_vs_silver_gold_which_is_more_sht/,0.78,False,False,False,False
+1gj0mv9,Which technologies support Parquets column index feature,"I recently learned about how the parquet format allows you to write statistics at the page level stored in the footer, which serves as a column index that allows for optimized reads with filters. And this is different from the typical predicate pushdown that occurs with row groups. (someone please correct me if im wrong) 
+
+Im having trouble understanding how widespread this feature is in various readers/writers. From my understanding apache spark and impala added support for them when reading and writing. 
+
+However I couldnt find clear information about the following technologies: 
+
+Aws Athena : Trino supports reading it i think but im not sure if that feature made its way to Athena
+
+Pyarrow : i believe i saw they support writing column indexes but not reading them
+
+Pandas
+
+Thanks",7,0,mendysTherapist,2024-11-03 23:36:11,https://www.reddit.com/r/dataengineering/comments/1gj0mv9/which_technologies_support_parquets_column_index/,0.83,False,False,False,False
+1gir1x7,Real world  LLMs products building experience,"Hey DE community! 👋  I have a background in data engineering, but I’m new to the LLM space. After reading this [AWS blog post](https://aws.amazon.com/blogs/machine-learning/automate-fine-tuning-of-llama-3-x-models-with-the-new-visual-designer-for-amazon-sagemaker-pipelines/) about using Amazon SageMaker’s new Visual Designer for fine-tuning Llama 3.x models recently, I had a few questions come up based on my past experience:
+
+* In real-world scenarios, is there often a need to fine-tune an LLM on a daily or weekly basis?
+* Is the “Visual Designer for Pipelines” just a buzzworthy feature, or does it actually improve productivity? I feel like the most efficient workflows in IT are usually code-based, not UI-driven.
+* This blog seems to show a “happy path” example where everything looks straightforward. What real-world challenges might teams face with this kind of use case? Do AWS products actually help address these challenges?
+
+Would love to hear any personal or team experiences or tips you might have when working on the real world  LLMs products.
+
+Thanks!",6,1,aid129,2024-11-03 16:40:18,https://www.reddit.com/r/dataengineering/comments/1gir1x7/real_world_llms_products_building_experience/,0.87,False,False,False,False
+1givyp9,Incompetent manager tales ?,"Just joined a project temporarily, the guy managing it wrote custom UDFs to calculate period over period values (never heard of a window function??), has multiple data types stored in a single column, and formats display values (including arrow emojis) in his SQL query 🤣🤣🤣",5,6,tiggat,2024-11-03 20:09:50,https://www.reddit.com/r/dataengineering/comments/1givyp9/incompetent_manager_tales/,0.86,False,False,False,False
+1gihj0t,Building “Auto-Analyst” — A data analytics AI agentic system,,2,1,AccountOk2272,2024-11-03 07:22:53,https://medium.com/firebird-technologies/building-auto-analyst-a-data-analytics-ai-agentic-system-3ac2573dcaf0?source=user_profile_page---------7-------------8e57bdd016b9---------------,0.57,False,False,False,False
+1gj3mab,Giant Json from Hulu,"Hulu accidentally dumped a \~10 page(unformatted) Json on me, not sure where to go with this but does anyone want it?",4,7,aflyingskypi3,2024-11-04 02:04:33,https://www.reddit.com/r/dataengineering/comments/1gj3mab/giant_json_from_hulu/,0.83,False,False,False,False
+1gj36yv,Reusability in Data Engineering: Holy Grail or Fool's Errand?,,0,2,carlineng_,2024-11-04 01:42:28,https://carlineng.com/?postid=holy-grail-data-engineering#blog,0.4,False,False,False,False
+1giwcw9,"Why Data Engineering Is THE Career Choice for 2025
+","Tech jobs can be crowded or routine, but Data Engineering seems to stand out. Here’s why:
+
+* **Real Impact**: Working with huge datasets that drive decisions—think billions of records powering AI and BI.
+* **Great Pay, Less Competition**: Salaries average around $98,000 in Canada, with senior roles up to $300,000. Plus, fewer applicants compared to other tech roles.
+* **Transferable Skills**: Tools are standardized across industries, making it easy to switch between fields and platforms.
+
+https://preview.redd.it/xup1gnvqxqyd1.png?width=1020&format=png&auto=webp&s=91e1b1bb1bdebf4db5fda5b3371742c8bb59204f
+
+Checkout the full video - [https://youtu.be/TDaCueJKznQ](https://youtu.be/TDaCueJKznQ)
+
+What do you think - is Data Engineering the path to watch, or is there something better on the horizon?",0,7,cryptoyash,2024-11-03 20:26:44,https://www.reddit.com/r/dataengineering/comments/1giwcw9/why_data_engineering_is_the_career_choice_for_2025/,0.2,False,False,False,False
