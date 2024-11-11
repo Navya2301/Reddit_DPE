@@ -20,7 +20,7 @@ def create_bucket_if_not_exist(s3 : s3fs.S3FileSystem, bucket:str):
         print(e)
 def upload_to_s3(s3: s3fs.S3FileSystem, file_path:str, bucket:str, s3_file_name:str):
     try:
-        s3.put(file_path, bucket+'/raw'+s3_file_name)
+        s3.put(file_path, bucket+'/raw/'+s3_file_name)
         print('File uploaded to S3')
     except FileNotFoundError:
         print('The file was not found')

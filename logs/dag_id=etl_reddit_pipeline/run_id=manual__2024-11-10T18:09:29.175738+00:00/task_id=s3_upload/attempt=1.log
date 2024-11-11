@@ -1,0 +1,16 @@
+[2024-11-10T18:09:35.024+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_reddit_pipeline.s3_upload manual__2024-11-10T18:09:29.175738+00:00 [queued]>
+[2024-11-10T18:09:35.034+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_reddit_pipeline.s3_upload manual__2024-11-10T18:09:29.175738+00:00 [queued]>
+[2024-11-10T18:09:35.035+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-11-10T18:09:35.043+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): s3_upload> on 2024-11-10 18:09:29.175738+00:00
+[2024-11-10T18:09:35.050+0000] {standard_task_runner.py:57} INFO - Started process 77 to run task
+[2024-11-10T18:09:35.053+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'etl_reddit_pipeline', 's3_upload', 'manual__2024-11-10T18:09:29.175738+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmptcbrnv1z']
+[2024-11-10T18:09:35.055+0000] {standard_task_runner.py:85} INFO - Job 9: Subtask s3_upload
+[2024-11-10T18:09:35.114+0000] {task_command.py:416} INFO - Running <TaskInstance: etl_reddit_pipeline.s3_upload manual__2024-11-10T18:09:29.175738+00:00 [running]> on host 97f6bbe1811b
+[2024-11-10T18:09:35.172+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Navya Racha' AIRFLOW_CTX_DAG_ID='etl_reddit_pipeline' AIRFLOW_CTX_TASK_ID='s3_upload' AIRFLOW_CTX_EXECUTION_DATE='2024-11-10T18:09:29.175738+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-10T18:09:29.175738+00:00'
+[2024-11-10T18:09:35.184+0000] {logging_mixin.py:151} INFO - <s3fs.core.S3FileSystem object at 0xffff6c4c3760>
+[2024-11-10T18:09:35.879+0000] {logging_mixin.py:151} INFO - Bucket already exists
+[2024-11-10T18:09:36.218+0000] {logging_mixin.py:151} INFO - File uploaded to S3
+[2024-11-10T18:09:36.220+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-11-10T18:09:36.238+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_reddit_pipeline, task_id=s3_upload, execution_date=20241110T180929, start_date=20241110T180935, end_date=20241110T180936
+[2024-11-10T18:09:36.268+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-11-10T18:09:36.320+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
